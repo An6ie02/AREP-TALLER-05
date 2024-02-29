@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <form action="/sen" method="post">
+        <label for="value">Calcular Seno:</label>
+        <input type="text" id="valueSen" name="value">
+        <input id="button-subb" type="button" value="Calcular" onclick="loadGetMsg1()">
+    </form>
+    <div id="getrespmsg1"> </div>
+    <form action="/cos" method="post">
+        <label for="value">Calcular Coseno:</label>
+        <input type="text" id="valueCos" name="value">
+        <input id="button-subb2" type="button" value="Calcular" onclick="loadGetMsg2()">
+    </form>
+    <div id="getrespmsg2"> </div>
+    <form action="/palindrome" method="post">
+        <label for="value">¿Palabra palindrome?</label>
+        <input type="text" id="valuePal" name="value">
+        <input id="button-subb3" type="button" value="Verificar" onclick="loadGetMsg3()">
+    </form>
+    <div id="getrespmsg3"> </div>
+    <form action="/magnitude" method="post">
+        <label for="value1">Valor 1:</label>
+        <input type="text" id="value1" name="value1">
+        <label for="value2">Valor 2:</label>
+        <input type="text" id="value2" name="value2">
+        <input id="button-subb4" type="button" value="Calcular" onclick="loadGetMsg4()">
+    </form>
+    <div id="getrespmsg4"> </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
